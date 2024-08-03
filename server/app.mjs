@@ -28,7 +28,7 @@ const port = process.env.PORT || 4000;
 
 const allowedOrigins = [
   process.env.VITE_BACKEND_URL,
-  '*'
+  `${import.meta.env.VITE_HOME_SERVICES_URL}`
 ];
 
 const corsOptions = {
