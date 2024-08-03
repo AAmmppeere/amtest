@@ -75,7 +75,7 @@ app.use("/user", userRouter);
 
 app.use("/", servicesRouter);
 
-app.get("/test", (req, res) => {
+app.get("/", (req, res) => {
   return res.json("Server API is working 🚀");
 });
 
