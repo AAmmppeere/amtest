@@ -30,7 +30,7 @@ console.log('VITE_DOMAIN_URL:', process.env.VITE_DOMAIN_URL);
 
 const allowedOrigins = [
   process.env.VITE_BACKEND_URL,
-  process.env.VITE_DOMAIN_URL
+  process.env.VITE_HOME_SERVICES_URL
 ];
 
 const corsOptions = {
