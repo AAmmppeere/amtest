@@ -28,7 +28,7 @@ const port = process.env.PORT || 4000;
 
 const allowedOrigins = [
   process.env.VITE_BACKEND_URL,
-  'https://homeservice-lilac.vercel.app'
+  'amtest-tau.vercel.app'
 ];
 
 const corsOptions = {
