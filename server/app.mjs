@@ -24,7 +24,7 @@ import bodyParser from "body-parser";
 import _ from "lodash";
 
 const app = express();
-const port = 4000;
+const port = process.env.PORT || 4000;
 
 const allowedOrigins = [
   process.env.VITE_BACKEND_URL,
