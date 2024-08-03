@@ -26,9 +26,11 @@ import _ from "lodash";
 const app = express();
 const port = process.env.PORT || 4000;
 
+console.log('VITE_DOMAIN_URL:', process.env.VITE_DOMAIN_URL);
+
 const allowedOrigins = [
   process.env.VITE_BACKEND_URL,
-  import.meta.env.VITE_DOMAIN_URL
+  process.env.VITE_DOMAIN_URL
 ];
 
 const corsOptions = {
