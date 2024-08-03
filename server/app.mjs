@@ -28,7 +28,7 @@ const port = process.env.PORT || 4000;
 
 const allowedOrigins = [
   process.env.VITE_BACKEND_URL,
-  'https://amtest-tau.vercel.app'
+  `${import.meta.env.VITE_DOMAIN_URL}`
 ];
 
 const corsOptions = {
