@@ -5,6 +5,7 @@ import cloudinary from "../utils/cloudinary.mjs";
 
 const adminserviceRouter = Router();
 
+
 adminserviceRouter.post("/post", upload.single("image"), async (req, res) => {
   try {
     const { service_name, category_name, subServiceItems } = req.body;

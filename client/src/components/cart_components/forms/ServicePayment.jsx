@@ -99,7 +99,7 @@ const ServicePayment = () => {
   const handleApplyCode = async () => {
     try {
       const response = await axios.post(
-        "${import.meta.env.VITE_API_BASE_URL}/apply-promo-code",
+        `${import.meta.env.VITE_API_BASE_URL}/apply-promo-code`,
         { promoCode, netPrice }
       );
       const { newNetPrice, message } = response.data;
