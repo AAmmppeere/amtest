@@ -206,7 +206,7 @@ function AdminServiceCreate() {
       });
 
       const response = await axios.post(
-        "${import.meta.env.VITE_API_BASE_URL}/adminservice/post",
+        `${import.meta.env.VITE_API_BASE_URL}/adminservice/post`,
         formData,
         {
           headers: {
